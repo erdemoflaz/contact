@@ -24,17 +24,6 @@ services:
       networks:
             testing_net:
                 ipv4_address: 172.28.1.2
-#    webserver:
-#      image: nginx:alpine
-#      container_name: ${PROJECT_NAME}-webserver
-#      working_dir: /contact-app
-#      volumes:
-#          - ./sourcefiles/nginx:/etc/nginx/conf.d
-#      ports:
-#       - "80:80"
-#      networks:
-#            testing_net:
-#                ipv4_address: 172.28.1.3
 
     php-fpm:
       build: sourcefiles/php-fpm
